@@ -1,0 +1,34 @@
+.main-header{
+	background: url(../images/hero.jpg) no-repeat center center;
+	height: 300px;
+}
+
+.logo {
+	@include span(3);
+
+	img{
+		max-width: 100%;
+	}
+}
+
+.main-navigation{
+	margin-top: 25px;
+
+	@include span(5 last);
+
+	li {
+		float: left;
+	}
+
+	a{
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 0 10px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
